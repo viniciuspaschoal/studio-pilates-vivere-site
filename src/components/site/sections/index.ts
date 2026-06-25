@@ -1,0 +1,11 @@
+export { AboutSection } from "./AboutSection";
+export { BenefitsSection } from "./BenefitsSection";
+export { ContactSection } from "./ContactSection";
+export { CtaSection } from "./CtaSection";
+export { FaqSection } from "./FaqSection";
+export { GallerySection } from "./GallerySection";
+export { HeroSection } from "./HeroSection";
+export { InstagramSection } from "./InstagramSection";
+export { StudioSection } from "./StudioSection";
+export { TeamSection } from "./TeamSection";
+export { TestimonialsSection } from "./TestimonialsSection";
