@@ -17,9 +17,9 @@ export function HeroSection() {
   return (
     <section
       id="inicio"
-      className="hero-wave-surface wave-surface relative isolate overflow-hidden bg-hero pb-14 pt-28 sm:pb-20 sm:pt-36 lg:flex lg:min-h-[720px] lg:items-center lg:pb-24 lg:pt-32"
+      className="hero-wave-surface wave-surface relative isolate overflow-hidden bg-hero pb-14 pt-28 sm:pb-20 sm:pt-36 lg:flex lg:min-h-180 lg:items-center lg:pb-24 lg:pt-32"
     >
-      <WaveAccent className="-left-[18%] -bottom-12 h-44 w-[136%] text-primary-light sm:h-56" />
+      <WaveAccent className="-bottom-12 left-[-18%] h-44 w-[136%] text-primary-light sm:h-56" />
       <div className="hero-orb hero-orb-right" aria-hidden="true" />
       <div className="hero-orb hero-orb-left" aria-hidden="true" />
 
@@ -32,14 +32,14 @@ export function HeroSection() {
             {siteConfig.hero.eyebrow}
           </span>
 
-          <h1 className="mx-auto mt-7 max-w-[10.5em] text-balance text-[2.55rem] font-medium leading-[1.07] tracking-[-0.025em] text-primary-deep sm:text-[3.3rem] lg:mx-0 lg:text-[3.45rem] xl:text-[3.65rem]">
+          <h1 className="mx-auto mt-7 max-w-[10.5em] text-balance text-[2.55rem] font-medium leading-[1.07] tracking-tight text-primary-deep sm:text-[3.3rem] lg:mx-0 lg:text-[3.45rem] xl:text-[3.65rem]">
             <span className="sr-only">{siteConfig.name} — </span>
             <span className="block">{siteConfig.hero.title}</span>
             <span className="mt-[0.08em] block font-normal text-primary">
               {siteConfig.hero.titleHighlight}
             </span>
           </h1>
-          <p className="mx-auto mt-7 max-w-[34rem] text-pretty text-base leading-[1.8] text-muted-foreground sm:text-lg sm:leading-[1.75] lg:mx-0 lg:max-w-[32rem]">
+          <p className="mx-auto mt-7 max-w-136 text-pretty text-base leading-[1.8] text-muted-foreground sm:text-lg sm:leading-[1.75] lg:mx-0 lg:max-w-lg">
             {siteConfig.hero.description}
           </p>
 
@@ -61,17 +61,17 @@ export function HeroSection() {
               className="hero-secondary-action"
               aria-label="Visitar o Instagram do Studio Pilates Vivere"
             >
-              <Instagram className="size-[1.125rem]" aria-hidden="true" />
+              <Instagram className="size-4.5" aria-hidden="true" />
               Ver Instagram
             </ActionLink>
           </div>
         </div>
 
-        <div className="hero-visual relative mx-auto w-full max-w-[550px] lg:-translate-y-8 lg:translate-x-4 xl:translate-x-7">
+        <div className="hero-visual relative mx-auto w-full max-w-137.5 lg:-translate-y-8 lg:translate-x-4 xl:translate-x-7">
           <div className="hero-brand-ring" aria-hidden="true" />
 
-          <div className="relative z-[1] flex min-h-[300px] flex-col items-center justify-center px-4 pb-8 pt-3 sm:min-h-[390px] sm:px-8 sm:pb-12 lg:min-h-[420px]">
-            <div className="w-full max-w-[375px] sm:max-w-[430px] lg:max-w-[465px]">
+          <div className="relative z-1 flex min-h-75 flex-col items-center justify-center px-4 pb-8 pt-3 sm:min-h-97.5 sm:px-8 sm:pb-12 lg:min-h-105">
+            <div className="w-full max-w-93.75 sm:max-w-107.5 lg:max-w-116.25">
               <img
                 src={siteConfig.brand.symbolUrl}
                 alt="Símbolo do Studio Pilates Vivere: pessoa praticando pilates sob um arco azul"
