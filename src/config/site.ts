@@ -8,6 +8,8 @@ import gallery7 from "@/assets/gallery-7.jpg";
 import logo from "@/assets/brand/logo-vivere-color.png";
 import logoSymbol from "@/assets/brand/logo-vivere-symbol.png";
 import studioSpace from "@/assets/studio-space.jpg";
+import palomaDario from "@/assets/team/profissional-1.png";
+import pamelaDario from "@/assets/team/profissional-2.png";
 
 export type BenefitIcon =
   | "activity"
@@ -25,6 +27,7 @@ export type TeamMember = {
   description: string;
   image?: string;
   imageAlt?: string;
+  highlights: readonly string[];
 };
 
 /*
@@ -160,8 +163,31 @@ export const siteConfig = {
     description:
       "Uma experiência conduzida com escuta, proximidade e exercícios adaptados ao momento de cada aluno.",
 
-    // Cadastre profissionais aqui quando tiver nome, cargo, texto e imagem autorizada.
-    members: [] as readonly TeamMember[],
+    professionalsTitle: "Conheça nossas profissionais",
+    professionalsDescription:
+      "Um atendimento próximo, cuidadoso e adaptado para cada aluno, respeitando objetivos, ritmo e necessidades individuais.",
+
+    // Placeholders temporários. Substitua por nomes, fotos e descrições reais quando tiver autorização.
+    members: [
+      {
+        name: "Paloma Dario",
+        role: "Fisioterapeuta e instrutora de Pilates",
+        image: palomaDario,
+        imageAlt: "Foto da fisioterapeuta Paloma Dario",
+        description:
+          "Atendimento voltado ao movimento consciente, acolhimento e evolução no ritmo de cada aluno.",
+        highlights: ["Atendimento personalizado", "Movimento consciente", "Acolhimento"],
+      },
+      {
+        name: "Pâmela Dario",
+        role: "Fisioterapeuta e instrutora de Pilates",
+        image: pamelaDario,
+        imageAlt: "Foto da fisioterapeuta Pâmela Dario",
+        description:
+          "Acompanhamento cuidadoso para promover segurança, bem-estar e confiança durante as aulas.",
+        highlights: ["Orientação individualizada", "Cuidado em cada detalhe", "Bem-estar"],
+      },
+    ] as readonly TeamMember[],
 
     values: ["Escuta e acolhimento", "Orientação individualizada", "Evolução no seu ritmo"],
     emptyTitle: "Acompanhamento que faz você se sentir à vontade",
